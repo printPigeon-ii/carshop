@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CarVault | Обране</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cars.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="container nav-content">
+
+            <a href="index.html" class="logo">
+                CAR<span>VAULT</span>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Головна
+                </a>
+
+                <a href="cars.html">
+                    Автомобілі
+                </a>
+
+                <a href="finance.html">
+                    Фінансування
+                </a>
+
+                <a href="about.html">
+                    Про нас
+                </a>
+
+                <a href="contact.html">
+                    Контакти
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a
+                    href="favourites.html"
+                    class="favourites"
+                    aria-label="Обране">
+
+                    ♡
+
+                </a>
+
+                <a
+                    href="cart.html"
+                    class="cart-link"
+                    aria-label="Кошик">
+
+                    🛒 <span class="cart-count">0</span>
+
+                </a>
+
+                <a
+                    href="login.html"
+                    class="login-btn">
+
+                    Увійти
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="cars-page favourites-page">
+
+            <div class="container">
+
+                <div class="page-header">
+                    <h1>Обрані автомобілі</h1>
+                    <p id="favourites-count">0 автомобілів</p>
+                </div>
+
+                <div id="empty-favourites" class="empty-favourites">
+                    <h2>У вас поки немає обраних автомобілів</h2>
+                    <p>Додайте автомобілі до обраного, натиснувши на ❤️.</p>
+
+                    <a href="cars.html" class="btn-primary">
+                        Переглянути автомобілі
+                    </a>
+                </div>
+
+                <div id="favourites-grid" class="cars-grid">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/cars.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/favourites.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CarVault | Кошик</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cars.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="container nav-content">
+
+        <a href="index.html" class="logo">
+            CAR<span>VAULT</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Головна
+            </a>
+
+            <a href="cars.html">
+                Автомобілі
+            </a>
+
+            <a href="finance.html">
+                Фінансування
+            </a>
+
+            <a href="about.html">
+                Про нас
+            </a>
+
+            <a href="contact.html">
+                Контакти
+            </a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <a
+                href="favourites.html"
+                class="favourites"
+                aria-label="Обране">
+                ♡
+            </a>
+
+            <a
+                href="cart.html"
+                class="cart-link cart-page-link"
+                aria-label="Кошик">
+                🛒 <span id="cart-count" class="cart-count">0</span>
+            </a>
+
+            <a
+                href="login.html"
+                class="login-btn">
+                Увійти
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main class="cart-page">
+
+    <div class="container">
+
+        <div class="page-header">
+
+            <h1>Кошик</h1>
+
+            <p id="cart-subtitle">
+                0 автомобілів
+            </p>
+
+        </div>
+
+
+        <div id="empty-cart" class="empty-cart">
+
+            <div class="empty-cart-icon">
+                🛒
+            </div>
+
+            <h2>Ваш кошик порожній</h2>
+
+            <p>
+                Додайте автомобілі до кошика, щоб оформити замовлення.
+            </p>
+
+            <a href="cars.html" class="btn-primary">
+                Переглянути автомобілі
+            </a>
+
+        </div>
+
+
+        <div id="cart-content" class="cart-content">
+
+            <div id="cart-items" class="cart-items">
+            </div>
+
+
+            <div class="cart-summary">
+
+                <h2>Підсумок замовлення</h2>
+
+                <div class="cart-summary-row">
+
+                    <span>
+                        Автомобілів:
+                    </span>
+
+                    <strong id="summary-count">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="cart-summary-total">
+
+                    <span>
+                        Разом:
+                    </span>
+
+                    <strong id="cart-total">
+                        £0
+                    </strong>
+
+                </div>
+
+
+                <button
+                    id="checkout-button"
+                    class="checkout-button"
+                    type="button">
+
+                    Оформити замовлення
+
+                </button>
+
+
+                <button
+                    id="clear-cart"
+                    class="clear-cart-button"
+                    type="button">
+
+                    Очистити кошик
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="js/cars.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+
+</body>
+</html>

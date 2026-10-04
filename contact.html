@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>CarVault | Контакти</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="container nav-content">
+
+        <a href="index.html" class="logo">
+            CAR<span>VAULT</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Головна
+            </a>
+
+            <a href="cars.html">
+                Автомобілі
+            </a>
+
+            <a href="finance.html">
+                Фінансування
+            </a>
+
+            <a href="about.html">
+                Про нас
+            </a>
+
+            <a href="contact.html" class="active">
+                Контакти
+            </a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <a
+                href="favourites.html"
+                class="favourites"
+                aria-label="Обране"
+            >
+                ♡
+            </a>
+
+            <a
+                href="cart.html"
+                class="cart-link"
+                aria-label="Кошик"
+            >
+                🛒
+                <span
+                    id="cart-count"
+                    class="cart-count"
+                >
+                    0
+                </span>
+            </a>
+
+            <a
+                href="login.html"
+                class="login-btn"
+            >
+                Увійти
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- CONTACT HERO -->
+
+    <section class="contact-hero">
+
+        <div class="container">
+
+            <p class="contact-label">
+                ЗВ'ЯЖІТЬСЯ З НАМИ
+            </p>
+
+            <h1>
+                Ми завжди
+                <span>готові допомогти.</span>
+            </h1>
+
+            <p class="contact-intro">
+                Маєте запитання щодо автомобілів,
+                фінансування або роботи сайту?
+                Напишіть нам.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT CONTENT -->
+
+    <section class="contact-section">
+
+        <div class="container contact-grid">
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="contact-info">
+
+                <p class="section-label">
+                    КОНТАКТНА ІНФОРМАЦІЯ
+                </p>
+
+                <h2>
+                    Як з нами зв'язатися
+                </h2>
+
+                <p class="contact-description">
+                    Для демонстрації роботи сайту
+                    ви можете скористатися формою
+                    праворуч.
+                </p>
+
+
+                <div class="contact-items">
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            @
+                        </div>
+
+                        <div>
+                            <h3>
+                                Електронна пошта
+                            </h3>
+
+                            <p>
+                                info@carvault.example
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ☎
+                        </div>
+
+                        <div>
+                            <h3>
+                                Телефон
+                            </h3>
+
+                            <p>
+                                +44 0000 000000
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ⌖
+                        </div>
+
+                        <div>
+                            <h3>
+                                Адреса
+                            </h3>
+
+                            <p>
+                                CarVault Centre
+                            </p>
+
+                            <p>
+                                United Kingdom
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <div class="contact-form-box">
+
+                <p class="section-label">
+                    НАПИСАТИ НАМ
+                </p>
+
+                <h2>
+                    Надішліть повідомлення
+                </h2>
+
+                <form id="contact-form">
+
+                    <div class="contact-field">
+
+                        <label for="contact-name">
+                            Ваше ім'я
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contact-name"
+                            placeholder="Введіть ваше ім'я"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="contact-field">
+
+                        <label for="contact-email">
+                            Електронна пошта
+                        </label>
+
+                        <input
+                            type="email"
+                            id="contact-email"
+                            placeholder="Введіть електронну пошту"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="contact-field">
+
+                        <label for="contact-subject">
+                            Тема
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contact-subject"
+                            placeholder="Тема повідомлення"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="contact-field">
+
+                        <label for="contact-message">
+                            Повідомлення
+                        </label>
+
+                        <textarea
+                            id="contact-message"
+                            rows="6"
+                            placeholder="Напишіть ваше повідомлення..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="contact-submit"
+                    >
+                        Надіслати повідомлення
+                    </button>
+
+                    <p
+                        id="contact-success"
+                        class="contact-success"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="contact-faq">
+
+        <div class="container">
+
+            <div class="section-heading centered">
+
+                <div>
+
+                    <p class="section-label">
+                        ПОШИРЕНІ ЗАПИТАННЯ
+                    </p>
+
+                    <h2>
+                        Корисна інформація
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-grid">
+
+                <div class="faq-card">
+
+                    <h3>
+                        Чи можна купити автомобіль?
+                    </h3>
+
+                    <p>
+                        Ні. CarVault є демонстраційним
+                        вебсайтом для навчального
+                        проєкту. Реальні покупки
+                        та платежі не здійснюються.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-card">
+
+                    <h3>
+                        Чи працює фінансовий калькулятор?
+                    </h3>
+
+                    <p>
+                        Так. Калькулятор виконує
+                        демонстраційний розрахунок
+                        щомісячного платежу без
+                        реальних фінансових операцій.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-card">
+
+                    <h3>
+                        Чи потрібно створювати акаунт?
+                    </h3>
+
+                    <p>
+                        Акаунт потрібен для використання
+                        функцій обраного та кошика.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta-section">
+
+        <div class="container">
+
+            <div class="cta-box">
+
+                <div>
+
+                    <p class="section-label">
+                        CARVAULT
+                    </p>
+
+                    <h2>
+                        Перегляньте наші автомобілі
+                    </h2>
+
+                    <p>
+                        Можливо, ваш наступний
+                        автомобіль уже чекає на вас.
+                    </p>
+
+                </div>
+
+                <a
+                    href="cars.html"
+                    class="btn btn-primary"
+                >
+                    Переглянути автомобілі
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    CAR<span>VAULT</span>
+                </a>
+
+                <p>
+                    Сучасний вибір автомобілів
+                    для тих, хто цінує якість,
+                    стиль та продуктивність.
+                </p>
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Навігація
+                </h4>
+
+                <a href="index.html">
+                    Головна
+                </a>
+
+                <a href="cars.html">
+                    Автомобілі
+                </a>
+
+                <a href="finance.html">
+                    Фінансування
+                </a>
+
+            </div>
+
+
+            <!-- CARVAULT -->
+
+            <div class="footer-column">
+
+                <h4>
+                    CarVault
+                </h4>
+
+                <a href="about.html">
+                    Про нас
+                </a>
+
+                <a href="contact.html">
+                    Контакти
+                </a>
+
+                <a href="favourites.html">
+                    Обране
+                </a>
+
+            </div>
+
+
+            <!-- HELP -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Допомога
+                </h4>
+
+                <a href="cart.html">
+                    Кошик
+                </a>
+
+                <a
+                    href="login.html"
+                    class="footer-login-link"
+                >
+                    Увійти
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 CarVault
+            </span>
+
+            <span>
+                Демонстраційний вебсайт
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+
+</body>
+
+</html>

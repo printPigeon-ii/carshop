@@ -1,0 +1,431 @@
+/* ========================================
+   PURCHASE PAGE
+======================================== */
+
+.purchase-page {
+    padding: 40px 0 80px;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.purchase-header {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 30px 0 40px;
+    padding: 35px 40px;
+
+    background: #151515;
+
+    border: 1px solid #2d2d2d;
+    border-left: 5px solid #e10600;
+
+    border-radius: 12px;
+}
+
+.purchase-header h1 {
+    margin: 0 0 15px;
+
+    color: #ffffff;
+
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.purchase-header p {
+    margin: 0;
+
+    color: #999999;
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   LAYOUT
+======================================== */
+
+.purchase-layout {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) 360px;
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+
+/* ========================================
+   FORM SECTION
+======================================== */
+
+.purchase-form-section {
+    padding: 30px;
+
+    background: #151515;
+
+    border: 1px solid #2d2d2d;
+
+    border-radius: 10px;
+}
+
+.purchase-form-section h2 {
+    margin: 0 0 30px;
+
+    color: #ffffff;
+
+    font-size: 22px;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+
+    color: #cccccc;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    background: #101010;
+
+    color: #ffffff;
+
+    border: 1px solid #333333;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+    border-color: #e10600;
+}
+
+.form-group input::placeholder {
+    color: #666666;
+}
+
+
+/* ========================================
+   DEMO PAYMENT
+======================================== */
+
+.demo-payment {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #2d2d2d;
+}
+
+.demo-payment h3 {
+    margin: 0 0 8px;
+
+    color: #ffffff;
+
+    font-size: 18px;
+}
+
+.demo-payment > p {
+    margin: 0 0 18px;
+
+    color: #888888;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.demo-payment-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 16px;
+
+    background: #202020;
+
+    border: 1px solid #333333;
+
+    border-radius: 8px;
+}
+
+.demo-payment-box > span {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    background: #2a2a2a;
+
+    border-radius: 8px;
+
+    font-size: 20px;
+}
+
+.demo-payment-box div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.demo-payment-box strong {
+    color: #ffffff;
+
+    font-size: 14px;
+}
+
+.demo-payment-box small {
+    color: #888888;
+
+    font-size: 12px;
+}
+
+
+/* ========================================
+   PURCHASE BUTTON
+======================================== */
+
+.purchase-button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px 20px;
+
+    background: #e10600;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: all 0.2s ease;
+}
+
+.purchase-button:hover {
+    background: #b80500;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 18px rgba(225, 6, 0, 0.2);
+}
+
+.purchase-button:active {
+    transform: translateY(0);
+}
+
+
+/* ========================================
+   ORDER SUMMARY
+======================================== */
+
+.purchase-summary {
+    padding: 25px;
+
+    background: #151515;
+
+    border: 1px solid #2d2d2d;
+
+    border-radius: 10px;
+
+    position: sticky;
+
+    top: 25px;
+}
+
+.purchase-summary h2 {
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-size: 21px;
+}
+
+
+/* ========================================
+   PURCHASE ITEMS
+======================================== */
+
+.purchase-item {
+    display: flex;
+
+    gap: 12px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #2d2d2d;
+}
+
+.purchase-item:first-child {
+    padding-top: 0;
+}
+
+.purchase-item-image {
+    width: 85px;
+    height: 60px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+}
+
+.purchase-item-info {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.purchase-item-info h3 {
+    margin: 0 0 5px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+}
+
+.purchase-item-info p {
+    margin: 0;
+
+    color: #888888;
+
+    font-size: 12px;
+}
+
+.purchase-item-price {
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* ========================================
+   TOTAL
+======================================== */
+
+.purchase-total {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 20px;
+}
+
+.purchase-total span {
+    color: #aaaaaa;
+
+    font-size: 14px;
+}
+
+.purchase-total strong {
+    color: #e10600;
+
+    font-size: 24px;
+}
+
+
+/* ========================================
+   EMPTY ORDER
+======================================== */
+
+.purchase-empty {
+    padding: 20px 0;
+
+    color: #888888;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .purchase-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .purchase-summary {
+        position: static;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .purchase-header {
+        padding: 25px 20px;
+    }
+
+    .purchase-header h1 {
+        font-size: 28px;
+    }
+
+    .purchase-form-section {
+        padding: 22px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+}

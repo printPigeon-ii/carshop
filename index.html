@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CarVault | Знайдіть свій автомобіль</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= НАВІГАЦІЯ ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-content">
+
+            <a href="index.html" class="logo">
+                CAR<span>VAULT</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html" class="active">
+                    Головна
+                </a>
+
+                <a href="cars.html">
+                    Автомобілі
+                </a>
+
+                <a href="finance.html">
+                    Фінансування
+                </a>
+
+                <a href="about.html">
+                    Про нас
+                </a>
+
+                <a href="contact.html">
+                    Контакти
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="favourites.html"
+                    class="favourites"
+                    aria-label="Обране">
+
+                    ♡
+
+                </a>
+
+                <a
+                    href="cart.html"
+                    class="cart-link"
+                    aria-label="Кошик">
+
+                    🛒 <span class="cart-count">0</span>
+
+                </a>
+
+                <a
+                    href="login.html"
+                    class="login-btn">
+
+                    Увійти
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= ГОЛОВНИЙ БАНЕР ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-image"></div>
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="hero-small-title">
+                        ПРЕМІАЛЬНІ АВТОМОБІЛІ
+                    </p>
+
+                    <h1>
+                        ЗНАЙДІТЬ<br>
+                        <span>СВІЙ АВТОМОБІЛЬ.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Відкрийте для себе якісні автомобілі
+                        за чудовими цінами. Перегляньте нашу
+                        колекцію та знайдіть автомобіль,
+                        який підходить саме вам.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="cars.html"
+                            class="btn btn-primary">
+
+                            Переглянути автомобілі
+
+                        </a>
+
+                        <a
+                            href="#featured"
+                            class="btn btn-outline">
+
+                            Рекомендовані
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ПОШУК ================= -->
+
+        <section class="search-section">
+
+            <div class="container">
+
+
+                <div class="search-box">
+
+
+                    <div class="search-title">
+
+                        <h2>
+                            Знайдіть свій ідеальний автомобіль
+                        </h2>
+
+                        <p>
+                            Пошукайте серед доступних автомобілів.
+                        </p>
+
+                    </div>
+
+
+
+                    <form
+                        class="car-search"
+                        action="cars.html">
+
+
+                        <!-- ВИРОБНИК -->
+
+                        <div class="search-field">
+
+                            <label for="make">
+                                Виробник
+                            </label>
+
+
+                            <select
+                                id="make"
+                                name="make">
+
+                                <option value="">
+                                    Усі виробники
+                                </option>
+
+                                <option value="BMW">
+                                    BMW
+                                </option>
+
+                                <option value="AUDI">
+                                    Audi
+                                </option>
+
+                                <option value="MERCEDES-BENZ">
+                                    Mercedes-Benz
+                                </option>
+
+                                <option value="VOLKSWAGEN">
+                                    Volkswagen
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- МОДЕЛЬ -->
+
+                        <div class="search-field">
+
+                            <label for="model">
+                                Модель
+                            </label>
+
+
+                            <select
+                                id="model"
+                                name="model">
+
+                                <option value="">
+                                    Усі моделі
+                                </option>
+
+                                <option value="M3 Competition">
+                                    M3 Competition
+                                </option>
+
+                                <option value="M4 Competition">
+                                    M4 Competition
+                                </option>
+
+                                <option value="RS3 Sportback">
+                                    RS3 Sportback
+                                </option>
+
+                                <option value="RS5 Coupe">
+                                    RS5 Coupe
+                                </option>
+
+                                <option value="C63 AMG">
+                                    C63 AMG
+                                </option>
+
+                                <option value="Golf R">
+                                    Golf R
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- ЦІНА -->
+
+                        <div class="search-field">
+
+                            <label for="price">
+                                Максимальна ціна
+                            </label>
+
+
+                            <select
+                                id="price"
+                                name="price">
+
+                                <option value="">
+                                    Будь-яка ціна
+                                </option>
+
+                                <option value="30000">
+                                    До £30 000
+                                </option>
+
+                                <option value="40000">
+                                    До £40 000
+                                </option>
+
+                                <option value="50000">
+                                    До £50 000
+                                </option>
+
+                                <option value="60000">
+                                    До £60 000
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- КНОПКА ПОШУКУ -->
+
+                        <button
+                            type="submit"
+                            class="search-button">
+
+                            Пошук
+
+                        </button>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= РЕКОМЕНДОВАНІ ================= -->
+
+        <section class="featured-section" id="featured">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            НАША КОЛЕКЦІЯ
+                        </p>
+
+                        <h2>
+                            Рекомендовані автомобілі
+                        </h2>
+
+                    </div>
+
+                    <a href="cars.html" class="view-all">
+                        Переглянути всі →
+                    </a>
+
+                </div>
+
+
+                <div class="car-grid">
+
+
+                    <!-- BMW -->
+
+                    <article class="car-card">
+
+                        <div class="car-image">
+
+                            <img
+                                class="car-card-image"
+                                src="images/cars/bmw-m3/main.jpg"
+                                alt="BMW M3 Competition">
+
+                            <button
+                                class="heart-button"
+                                type="button"
+                                data-car-id="1"
+                                aria-label="Додати до обраного">
+                                ♡
+                            </button>
+
+                            <span class="car-badge">
+                                Рекомендовано
+                            </span>
+
+                        </div>
+
+
+                        <div class="car-info">
+
+                            <p class="car-make">
+                                BMW
+                            </p>
+
+                            <h3>
+                                M3 Competition
+                            </h3>
+
+
+                            <div class="car-details">
+
+                                <span>
+                                    2024
+                                </span>
+
+                                <span>
+                                    8 200 км
+                                </span>
+
+                                <span>
+                                    Бензин
+                                </span>
+
+                            </div>
+
+
+                            <div class="car-bottom">
+
+                                <div class="car-price">
+                                    £45,995
+                                </div>
+
+                                <a
+                                    href="car-details.html?id=1"
+                                    class="details-link">
+
+                                    Переглянути →
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- AUDI -->
+
+                    <article class="car-card">
+
+                        <div class="car-image">
+
+                            <img
+                                class="car-card-image"
+                                src="images/cars/audi-rs3/main.jpg"
+                                alt="Audi RS3 Sportback">
+
+                            <button
+                                class="heart-button"
+                                type="button"
+                                data-car-id="3"
+                                aria-label="Додати до обраного">
+                                ♡
+                            </button>
+
+                            <span class="car-badge">
+                                РЕКОМЕНДОВАНО
+                            </span>
+                        </div>
+
+
+                        <div class="car-info">
+
+                            <p class="car-make">
+                                AUDI
+                            </p>
+
+                            <h3>
+                                RS3 Sportback
+                            </h3>
+
+
+                            <div class="car-details">
+
+                                <span>
+                                    2023
+                                </span>
+
+                                <span>
+                                    12 400 км
+                                </span>
+
+                                <span>
+                                    Бензин
+                                </span>
+
+                            </div>
+
+
+                            <div class="car-bottom">
+
+                                <div class="car-price">
+                                    £39,995
+                                </div>
+
+                                <a
+                                    href="car-details.html?id=3"
+                                    class="details-link">
+
+                                    Переглянути →
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- MERCEDES -->
+
+                    <article class="car-card">
+
+                        <div class="car-image">
+
+                            <img
+                                class="car-card-image"
+                                src="images/cars/mercedes-c63/main.jpg"
+                                alt="Mercedes-Benz C63 AMG">
+
+                            <button
+                                class="heart-button"
+                                type="button"
+                                data-car-id="5"
+                                aria-label="Додати до обраного">
+                                ♡
+                            </button>
+
+                             <span class="car-badge">
+                                РЕКОМЕНДОВАНО
+                            </span>
+                        </div>
+
+
+                        <div class="car-info">
+
+                            <p class="car-make">
+                                MERCEDES-BENZ
+                            </p>
+
+                            <h3>
+                                C63 AMG
+                            </h3>
+
+
+                            <div class="car-details">
+
+                                <span>
+                                    2024
+                                </span>
+
+                                <span>
+                                    6 100 км
+                                </span>
+
+                                <span>
+                                    Бензин
+                                </span>
+
+                            </div>
+
+
+                            <div class="car-bottom">
+
+                                <div class="car-price">
+                                    £52,500
+                                </div>
+
+                                <a
+                                    href="car-details.html?id=5"
+                                    class="details-link">
+
+                                    Переглянути →
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ЧОМУ CARVAULT ================= -->
+
+        <section class="why-section">
+
+
+            <div class="container">
+
+
+                <div class="section-heading centered">
+
+                    <p class="section-label">
+                        ЧОМУ CARVAULT
+                    </p>
+
+
+                    <h2>
+                        Все необхідне для вибору автомобіля
+                    </h2>
+
+
+                    <p>
+                        Простий спосіб знайти та обрати
+                        автомобіль, який вам підходить.
+                    </p>
+
+                </div>
+
+
+
+                <div class="features-grid">
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <h3>
+                            Якісні автомобілі
+                        </h3>
+
+                        <p>
+                            Кожен автомобіль у нашій колекції
+                            має детальну інформацію та характеристики.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            £
+                        </div>
+
+                        <h3>
+                            Вигідні ціни
+                        </h3>
+
+                        <p>
+                            Переглядайте різні варіанти та
+                            порівнюйте ціни перед вибором.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ★
+                        </div>
+
+                        <h3>
+                            Обране
+                        </h3>
+
+                        <p>
+                            Зберігайте автомобілі, які вам
+                            сподобалися, щоб переглянути їх пізніше.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            →
+                        </div>
+
+                        <h3>
+                            Простий процес
+                        </h3>
+
+                        <p>
+                            Зручна навігація допомагає швидко
+                            перейти від пошуку до оформлення.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta-section">
+
+
+            <div class="container cta-content">
+
+
+                <div>
+
+                    <p class="section-label">
+                        ЗНАЙДІТЬ СВІЙ АВТОМОБІЛЬ
+                    </p>
+
+
+                    <h2>
+                        Готові знайти свій наступний автомобіль?
+                    </h2>
+
+
+                    <p>
+                        Перегляньте нашу колекцію та знайдіть
+                        автомобіль, який підходить саме вам.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="cars.html"
+                    class="btn btn-primary">
+
+                    Переглянути автомобілі →
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo"
+                    >
+                        CAR<span>VAULT</span>
+                    </a>
+
+                    <p>
+                        Сучасний вибір автомобілів
+                        для тих, хто цінує якість,
+                        стиль та продуктивність.
+                    </p>
+
+                </div>
+
+
+                <!-- NAVIGATION -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Навігація
+                    </h4>
+
+                    <a href="index.html">
+                        Головна
+                    </a>
+
+                    <a href="cars.html">
+                        Автомобілі
+                    </a>
+
+                    <a href="finance.html">
+                        Фінансування
+                    </a>
+
+                </div>
+
+
+                <!-- CARVAULT -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        CarVault
+                    </h4>
+
+                    <a href="about.html">
+                        Про нас
+                    </a>
+
+                    <a href="contact.html">
+                        Контакти
+                    </a>
+
+                    <a href="favourites.html">
+                        Обране
+                    </a>
+
+                </div>
+
+
+                <!-- HELP -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Допомога
+                    </h4>
+
+                    <a href="cart.html">
+                        Кошик
+                    </a>
+
+                    <a
+                        href="login.html"
+                        class="footer-login-link"
+                    >
+                        Увійти
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 CarVault
+                </span>
+
+                <span>
+                    Демонстраційний вебсайт
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

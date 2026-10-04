@@ -1,0 +1,1209 @@
+/* =====================================================
+   CARVAULT - CAR DETAILS PAGE
+   ===================================================== */
+
+
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #080b0f;
+    color: #f5f7fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =====================================================
+   CONTAINER
+   ===================================================== */
+
+.container {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   NAVBAR
+   ===================================================== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: rgba(8, 11, 15, 0.96);
+
+    border-bottom: 1px solid #20262e;
+
+    backdrop-filter: blur(10px);
+}
+
+.nav-content {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+/* LOGO */
+
+.logo {
+    color: #ffffff;
+
+    font-size: 22px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #e63946;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 32px;
+}
+
+.nav-links a {
+    position: relative;
+
+    color: #aeb5bf;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 28px 0;
+
+    transition: 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+}
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 18px;
+
+    height: 2px;
+
+    background: #e63946;
+
+    border-radius: 10px;
+}
+
+
+/* NAV ACTIONS */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.favourites {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    border: 1px solid #2a313a;
+
+    border-radius: 7px;
+
+    font-size: 20px;
+
+    transition: 0.25s ease;
+}
+
+.favourites:hover {
+    color: #e63946;
+    border-color: #e63946;
+}
+
+.login-btn {
+    padding: 11px 19px;
+
+    background: #e63946;
+
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.25s ease;
+}
+
+.login-btn:hover {
+    background: #ff4d5a;
+}
+
+
+/* =====================================================
+   BREADCRUMB
+   ===================================================== */
+
+.breadcrumb-section {
+    padding: 22px 0;
+
+    background: #0b0f14;
+
+    border-bottom: 1px solid #1c2229;
+}
+
+.breadcrumb-section .container {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 13px;
+}
+
+.breadcrumb-section a {
+    color: #ffffff;
+
+    transition: 0.2s ease;
+}
+
+.breadcrumb-section a:hover {
+    color: #e63946;
+}
+
+.breadcrumb-section span {
+    color: #68717d;
+}
+
+
+/* =====================================================
+   MAIN PAGE
+   ===================================================== */
+
+.details-page {
+    padding: 55px 0 100px;
+}
+
+
+/* =====================================================
+   TOP VEHICLE SECTION
+   ===================================================== */
+
+.vehicle-top {
+    display: grid;
+
+    grid-template-columns: 1.25fr 0.85fr;
+
+    gap: 55px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   CAR IMAGE
+   ===================================================== */
+
+.vehicle-gallery {
+    width: 100%;
+}
+
+.main-car-image {
+    height: 500px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    border: 1px solid #2a313a;
+
+    background:
+        radial-gradient(
+            circle at 50% 42%,
+            #394452 0%,
+            #202833 25%,
+            #10151b 60%,
+            #090c10 100%
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+
+/* Decorative light */
+
+.main-car-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    box-shadow:
+        0 0 80px rgba(230, 57, 70, 0.08);
+}
+
+
+/* Fake floor */
+
+.main-car-image::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 60px;
+
+    width: 70%;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    filter: blur(25px);
+}
+
+
+/* CAR NAME */
+
+#car-image {
+    position: relative;
+    z-index: 2;
+
+    color: rgba(255, 255, 255, 0.16);
+
+    font-size: clamp(45px, 6vw, 80px);
+
+    font-weight: 900;
+
+    letter-spacing: 5px;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+
+/* =====================================================
+   IMAGE BADGE
+   ===================================================== */
+
+.gallery-badge {
+    position: absolute;
+
+    top: 22px;
+    left: 22px;
+
+    z-index: 5;
+
+    padding: 8px 14px;
+
+    background: #e63946;
+
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =====================================================
+   HEART
+   ===================================================== */
+
+.gallery-heart {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    z-index: 5;
+
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid #39414b;
+
+    border-radius: 50%;
+
+    background: rgba(8, 11, 15, 0.75);
+
+    color: #ffffff;
+
+    font-size: 23px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.gallery-heart:hover {
+    background: #e63946;
+    border-color: #e63946;
+}
+
+
+/* =====================================================
+   THUMBNAILS
+   ===================================================== */
+
+.thumbnail-row {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 14px;
+}
+
+.thumbnail {
+    height: 70px;
+
+    border: 1px solid #272e37;
+
+    border-radius: 8px;
+
+    background: #11161c;
+
+    color: #89929e;
+
+    cursor: pointer;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: 0.25s ease;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+    color: #ffffff;
+
+    border-color: #e63946;
+
+    background: #171c23;
+}
+
+
+/* =====================================================
+   VEHICLE INFORMATION
+   ===================================================== */
+
+.vehicle-info {
+    padding-top: 8px;
+}
+
+.vehicle-make {
+    margin: 0 0 8px;
+
+    color: #e63946;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.vehicle-info h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(38px, 4vw, 58px);
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+}
+
+.vehicle-subtitle {
+    margin: 14px 0 0;
+
+    color: #858e99;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   PRICE
+   ===================================================== */
+
+.vehicle-price {
+    margin-top: 30px;
+
+    padding: 25px 0;
+
+    border-top: 1px solid #242b33;
+    border-bottom: 1px solid #242b33;
+}
+
+.vehicle-price span {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.vehicle-price small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #68717d;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   QUICK SPECS
+   ===================================================== */
+
+.quick-specs {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.spec {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 14px;
+
+    background: #11161c;
+
+    border: 1px solid #242b33;
+
+    border-radius: 8px;
+
+    transition: 0.25s ease;
+}
+
+.spec:hover {
+    transform: translateY(-2px);
+
+    border-color: #3a424c;
+}
+
+.spec-icon {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(230, 57, 70, 0.12);
+
+    color: #e63946;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+}
+
+.spec strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 13px;
+}
+
+.spec small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #6f7883;
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   ACTION BUTTONS
+   ===================================================== */
+
+.vehicle-actions {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 22px;
+}
+
+.vehicle-actions .btn {
+    min-height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.btn-primary {
+    background: #e63946;
+
+    color: #ffffff;
+
+    border: none;
+
+    transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+    background: #ff4d5a;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(230, 57, 70, 0.2);
+}
+
+
+/* =========================================
+   LARGE FAVOURITE BUTTON
+   ========================================= */
+
+.favourite-large {
+    position: static;
+    width: auto;
+    height: auto;
+    min-height: 48px;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+    border: 1px solid rgba(245, 247, 250, 0.15);
+
+    background: transparent;
+    color: var(--white);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.favourite-large:hover {
+    background: var(--red);
+    border-color: var(--red);
+}
+
+.favourite-large.liked {
+    background: var(--red);
+    border-color: var(--red);
+    color: white;
+}
+
+
+/* =====================================================
+   FINANCE BOX
+   ===================================================== */
+
+.finance-box {
+    margin-top: 15px;
+
+    padding: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background: rgba(230, 57, 70, 0.06);
+
+    border: 1px solid rgba(230, 57, 70, 0.2);
+
+    border-radius: 8px;
+}
+
+.finance-box strong {
+    color: #ffffff;
+
+    font-size: 13px;
+}
+
+.finance-box p {
+    margin: 5px 0 0;
+
+    color: #737d88;
+
+    font-size: 11px;
+}
+
+.finance-box a {
+    color: #e63946;
+
+    white-space: nowrap;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   SECTION LABEL
+   ===================================================== */
+
+.section-label {
+    margin: 0 0 10px;
+
+    color: #e63946;
+
+    font-size: 11px;
+    font-weight: 900;
+
+    letter-spacing: 2.5px;
+}
+
+
+/* =====================================================
+   VEHICLE DESCRIPTION
+   ===================================================== */
+
+.vehicle-description {
+    margin-top: 80px;
+
+    padding: 45px;
+
+    display: grid;
+
+    grid-template-columns: 1.4fr 0.9fr;
+
+    gap: 70px;
+
+    background: #10151b;
+
+    border: 1px solid #242b33;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.description-main h2 {
+    margin: 0 0 20px;
+
+    color: #ffffff;
+
+    font-size: 32px;
+}
+
+.description-main p:not(.section-label) {
+    max-width: 700px;
+
+    margin: 0 0 15px;
+
+    color: #89929e;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   CHECKS
+   ===================================================== */
+
+.vehicle-checks {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 0;
+}
+
+.check {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid #252c34;
+}
+
+.check:first-child {
+    padding-top: 0;
+}
+
+.check:last-child {
+    border-bottom: none;
+}
+
+.check > span {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(230, 57, 70, 0.1);
+
+    color: #e63946;
+
+    border-radius: 50%;
+
+    font-weight: 900;
+}
+
+.check strong {
+    color: #ffffff;
+
+    font-size: 13px;
+}
+
+.check p {
+    margin: 4px 0 0;
+
+    color: #707a86;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   SPECIFICATIONS
+   ===================================================== */
+
+.specifications {
+    margin-top: 80px;
+}
+
+.section-title {
+    margin-bottom: 25px;
+}
+
+.section-title h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 32px;
+}
+
+
+/* =====================================================
+   SPEC GRID
+   ===================================================== */
+
+.spec-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    overflow: hidden;
+
+    border: 1px solid #272e37;
+
+    border-radius: 10px;
+}
+
+.spec-row {
+    min-height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 17px 22px;
+
+    background: #11161c;
+
+    border-bottom: 1px solid #242b33;
+}
+
+.spec-row:nth-child(odd) {
+    border-right: 1px solid #242b33;
+}
+
+.spec-row span {
+    color: #737d88;
+
+    font-size: 13px;
+}
+
+.spec-row strong {
+    color: #ffffff;
+
+    font-size: 13px;
+
+    text-align: right;
+}
+
+
+/* =====================================================
+   BOTTOM CTA
+   ===================================================== */
+
+.details-cta {
+    margin-top: 70px;
+
+    padding: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(230, 57, 70, 0.14),
+            #10151b 55%
+        );
+
+    border: 1px solid rgba(230, 57, 70, 0.25);
+
+    border-radius: 14px;
+}
+
+.details-cta h2 {
+    margin: 0 0 8px;
+
+    color: #ffffff;
+
+    font-size: 29px;
+}
+
+.details-cta p:last-child {
+    margin: 0;
+
+    color: #7c8691;
+
+    font-size: 13px;
+}
+
+.details-cta .btn {
+    min-width: 210px;
+
+    min-height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.footer {
+    margin-top: 30px;
+
+    padding: 60px 0 25px;
+
+    background: #06080b;
+
+    border-top: 1px solid #1c2229;
+}
+
+.footer-content {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+
+    gap: 50px;
+}
+
+.footer-brand p {
+    max-width: 270px;
+
+    margin-top: 15px;
+
+    color: #68717d;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+}
+
+.footer-column h4 {
+    margin: 0 0 8px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+}
+
+.footer-column a,
+.footer-column p {
+    margin: 0;
+
+    color: #6f7883;
+
+    font-size: 12px;
+
+    transition: 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: #e63946;
+}
+
+.footer-bottom {
+    margin-top: 45px;
+
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid #1b2128;
+
+    color: #505963;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .vehicle-top {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-description {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-content {
+        min-height: 65px;
+    }
+
+    .details-page {
+        padding-top: 30px;
+    }
+
+    .main-car-image {
+        height: 350px;
+    }
+
+    #car-image {
+        font-size: 40px;
+    }
+
+    .quick-specs {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-description {
+        padding: 28px;
+
+        margin-top: 55px;
+    }
+
+    .spec-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .spec-row:nth-child(odd) {
+        border-right: none;
+    }
+
+    .details-cta {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 30px;
+    }
+
+    .details-cta .btn {
+        width: 100%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+}
+
+/* =========================================
+   IMAGE GALLERY FIX
+   ========================================= */
+
+.main-car-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-car-image > #car-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* Thumbnail row */
+
+.thumbnail-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.thumbnail {
+    height: 90px;
+    padding: 0;
+    overflow: hidden;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background: var(--dark);
+    cursor: pointer;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.thumbnail.active {
+    border-color: var(--red);
+}
+
+.thumbnail:hover {
+    border-color: var(--red);
+}

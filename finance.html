@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>CarVault | Фінансування</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/finance.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="container nav-content">
+
+        <a href="index.html" class="logo">
+            CAR<span>VAULT</span>
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Головна
+            </a>
+
+            <a href="cars.html">
+                Автомобілі
+            </a>
+
+            <a href="finance.html" class="active">
+                Фінансування
+            </a>
+
+            <a href="about.html">
+                Про нас
+            </a>
+
+            <a href="contact.html">
+                Контакти
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <a
+                href="favourites.html"
+                class="favourites"
+                aria-label="Обране">
+                ♡
+            </a>
+
+
+            <a
+                href="cart.html"
+                class="cart-link"
+                aria-label="Кошик">
+
+                🛒
+
+                <span
+                    id="cart-count"
+                    class="cart-count">
+                    0
+                </span>
+
+            </a>
+
+
+            <a
+                href="login.html"
+                class="login-btn">
+                Увійти
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+    <!-- =====================================
+         FINANCE HERO
+    ====================================== -->
+
+    <section class="finance-hero">
+
+        <div class="container">
+
+            <p class="finance-label">
+                ФІНАНСУВАННЯ CARVAULT
+            </p>
+
+            <h1>
+                Знайдіть автомобіль.
+                <span>Розрахуйте оплату.</span>
+            </h1>
+
+            <p class="finance-intro">
+                Оберіть автомобіль та скористайтеся
+                нашим демонстраційним калькулятором,
+                щоб приблизно розрахувати щомісячний платіж.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         FINANCE OPTIONS
+    ====================================== -->
+
+    <section class="finance-options">
+
+        <div class="container">
+
+            <div class="section-heading centered">
+
+                <div>
+
+                    <p class="section-label">
+                        ВАРІАНТИ
+                    </p>
+
+                    <h2>
+                        Як можна придбати автомобіль
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="finance-grid">
+
+
+                <div class="finance-card">
+
+                    <div class="finance-icon">
+                        £
+                    </div>
+
+                    <h3>
+                        Автомобільний кредит
+                    </h3>
+
+                    <p>
+                        Розподіліть вартість автомобіля
+                        на кілька щомісячних платежів.
+                        Це допомагає зробити покупку
+                        більш доступною.
+                    </p>
+
+                </div>
+
+
+                <div class="finance-card">
+
+                    <div class="finance-icon">
+                        %
+                    </div>
+
+                    <h3>
+                        Гнучкі платежі
+                    </h3>
+
+                    <p>
+                        Оберіть розмір першого внеску
+                        та бажаний термін фінансування,
+                        щоб отримати зручний план платежів.
+                    </p>
+
+                </div>
+
+
+                <div class="finance-card">
+
+                    <div class="finance-icon">
+                        ✓
+                    </div>
+
+                    <h3>
+                        Простий розрахунок
+                    </h3>
+
+                    <p>
+                        Використовуйте калькулятор нижче,
+                        щоб швидко побачити приблизну
+                        щомісячну суму.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         CALCULATOR
+    ====================================== -->
+
+    <section class="calculator-section">
+
+        <div class="container">
+
+            <div class="calculator-box">
+
+
+                <div class="calculator-heading">
+
+                    <p class="section-label">
+                        КАЛЬКУЛЯТОР
+                    </p>
+
+                    <h2>
+                        Розрахуйте щомісячний платіж
+                    </h2>
+
+                    <p>
+                        Введіть дані нижче для демонстраційного
+                        розрахунку.
+                    </p>
+
+                </div>
+
+
+                <div class="calculator-content">
+
+
+                    <div class="calculator-form">
+
+
+                        <div class="calculator-field">
+
+                            <label for="car-price">
+                                Вартість автомобіля (£)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="car-price"
+                                value="45000"
+                                min="1000">
+
+                        </div>
+
+
+                        <div class="calculator-field">
+
+                            <label for="deposit">
+                                Перший внесок (£)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="deposit"
+                                value="5000"
+                                min="0">
+
+                        </div>
+
+
+                        <div class="calculator-field">
+
+                            <label for="term">
+                                Термін фінансування
+                            </label>
+
+                            <select id="term">
+
+                                <option value="12">
+                                    12 місяців
+                                </option>
+
+                                <option value="24">
+                                    24 місяці
+                                </option>
+
+                                <option
+                                    value="36"
+                                    selected>
+                                    36 місяців
+                                </option>
+
+                                <option value="48">
+                                    48 місяців
+                                </option>
+
+                                <option value="60">
+                                    60 місяців
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            id="calculate-button"
+                            class="calculate-button">
+
+                            Розрахувати
+
+                        </button>
+
+
+                    </div>
+
+
+
+                    <div class="calculator-result">
+
+                        <p>
+                            Орієнтовний щомісячний платіж
+                        </p>
+
+                        <strong id="monthly-payment">
+                            £0
+                        </strong>
+
+                        <span>
+                            на місяць
+                        </span>
+
+                        <div class="result-line"></div>
+
+                        <p class="result-note">
+                            Розрахунок є демонстраційним
+                            і не є реальною фінансовою пропозицією.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         CTA
+    ====================================== -->
+
+    <section class="cta-section">
+
+        <div class="container">
+
+            <div class="cta-box">
+
+                <div>
+
+                    <p class="section-label">
+                        ГОТОВІ ПОЧАТИ?
+                    </p>
+
+                    <h2>
+                        Оберіть свій автомобіль
+                    </h2>
+
+                    <p>
+                        Перегляньте всю колекцію
+                        автомобілів CarVault.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="cars.html"
+                    class="btn btn-primary">
+
+                    Переглянути автомобілі
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================
+     FOOTER
+====================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    CAR<span>VAULT</span>
+                </a>
+
+                <p>
+                    Сучасний вибір автомобілів
+                    для тих, хто цінує якість,
+                    стиль та продуктивність.
+                </p>
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Навігація
+                </h4>
+
+                <a href="index.html">
+                    Головна
+                </a>
+
+                <a href="cars.html">
+                    Автомобілі
+                </a>
+
+                <a href="finance.html">
+                    Фінансування
+                </a>
+
+            </div>
+
+
+            <!-- CARVAULT -->
+
+            <div class="footer-column">
+
+                <h4>
+                    CarVault
+                </h4>
+
+                <a href="about.html">
+                    Про нас
+                </a>
+
+                <a href="contact.html">
+                    Контакти
+                </a>
+
+                <a href="favourites.html">
+                    Обране
+                </a>
+
+            </div>
+
+
+            <!-- HELP -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Допомога
+                </h4>
+
+                <a href="cart.html">
+                    Кошик
+                </a>
+
+                <a
+                    href="login.html"
+                    class="footer-login-link"
+                >
+                    Увійти
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 CarVault
+            </span>
+
+            <span>
+                Демонстраційний вебсайт
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/main.js"></script>
+<script src="js/finance.js"></script>
+
+</body>
+
+</html>

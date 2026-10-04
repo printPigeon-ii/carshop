@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CarVault | Деталі автомобіля</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/car-detail.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================= НАВІГАЦІЯ ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-content">
+
+            <a href="index.html" class="logo">
+                CAR<span>VAULT</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Головна
+                </a>
+
+                <a href="cars.html" class="active">
+                    Автомобілі
+                </a>
+
+                <a href="finance.html">
+                    Фінансування
+                </a>
+
+                <a href="about.html">
+                    Про нас
+                </a>
+
+                <a href="contact.html">
+                    Контакти
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="favourites.html"
+                    class="favourites"
+                    aria-label="Обране">
+
+                    ♡
+
+                </a>
+
+                <a
+                    href="cart.html"
+                    class="cart-link"
+                    aria-label="Кошик">
+
+                    🛒 <span class="cart-count">0</span>
+
+                </a>
+
+                <a
+                    href="login.html"
+                    class="login-btn">
+
+                    Увійти
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= НАВІГАЦІЙНИЙ ЛАНЦЮЖОК ================= -->
+
+    <section class="breadcrumb-section">
+
+        <div class="container">
+
+            <div class="details-back-buttons">
+
+                <a href="cars.html" class="back-link" id="back-to-cars">
+                    ← Назад до автомобілів
+                </a>
+
+                <a href="favourites.html" class="back-link" id="back-to-favourites" style="display: none;">
+                    ← Обране
+                </a>
+
+            </div>
+
+            <span>/</span>
+
+            <span id="breadcrumb-name">
+                Деталі автомобіля
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ДЕТАЛІ АВТОМОБІЛЯ ================= -->
+
+    <main class="details-page">
+
+        <div class="container">
+
+
+            <section class="vehicle-top">
+
+                <!-- ================= GALLERY ================= -->
+
+                <div class="vehicle-gallery">
+
+                    <div class="main-car-image">
+
+                        <img id="car-image" src="" alt="">
+
+                        <button
+                            class="gallery-heart heart-button"
+                            type="button"
+                            aria-label="Додати до обраного">
+
+                            ♡
+
+                        </button>
+
+                        <span id="gallery-badge" class="gallery-badge" style="display: none;">
+                            РЕКОМЕНДОВАНО
+                        </span>
+
+                    </div>
+
+
+                    <div class="thumbnail-row">
+
+                        <button
+                            class="thumbnail active"
+                            type="button"
+                            data-image="images/cars/bmw-m3/front.jpg">
+
+                            <img
+                                src="images/cars/bmw-m3/front.jpg"
+                                alt="BMW M3 front">
+
+                        </button>
+
+
+                        <button
+                            class="thumbnail"
+                            type="button"
+                            data-image="images/cars/bmw-m3/rear.jpg">
+
+                            <img
+                                src="images/cars/bmw-m3/rear.jpg"
+                                alt="BMW M3 rear">
+
+                        </button>
+
+
+                        <button
+                            class="thumbnail"
+                            type="button"
+                            data-image="images/cars/bmw-m3/side.jpg">
+
+                            <img
+                                src="images/cars/bmw-m3/side.jpg"
+                                alt="BMW M3 side">
+
+                        </button>
+
+
+                        <button
+                            class="thumbnail"
+                            type="button"
+                            data-image="images/cars/bmw-m3/interior.jpg">
+
+                            <img
+                                src="images/cars/bmw-m3/interior.jpg"
+                                alt="BMW M3 interior">
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= INFORMATION ================= -->
+
+                <div class="vehicle-info">
+
+                    <p
+                        class="vehicle-make"
+                        id="car-make">
+
+                        BMW
+
+                    </p>
+
+
+                    <h1 id="car-name">
+                        Завантаження...
+                    </h1>
+
+
+                    <p
+                        class="vehicle-subtitle"
+                        id="car-description">
+
+                        Завантаження інформації про автомобіль...
+
+                    </p>
+
+
+                    <!-- PRICE -->
+
+                    <div class="vehicle-price">
+
+                        <span id="car-price">
+                            £0
+                        </span>
+
+                        <small>
+                            Реальна оплата не здійснюється — навчальний проєкт
+                        </small>
+
+                    </div>
+
+
+                    <!-- QUICK SPECS -->
+
+                    <div class="quick-specs">
+
+                        <div class="spec">
+
+                            <span class="spec-icon">
+                                📅
+                            </span>
+
+                            <div>
+
+                                <strong id="car-year">
+                                    -
+                                </strong>
+
+                                <small>
+                                    Рік
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="spec">
+
+                            <span class="spec-icon">
+                                ◉
+                            </span>
+
+                            <div>
+
+                                <strong id="car-mileage">
+                                    -
+                                </strong>
+
+                                <small>
+                                    Пробіг
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="spec">
+
+                            <span class="spec-icon">
+                                ⛽
+                            </span>
+
+                            <div>
+
+                                <strong id="car-fuel">
+                                    -
+                                </strong>
+
+                                <small>
+                                    Паливо
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="spec">
+
+                            <span class="spec-icon">
+                                A
+                            </span>
+
+                            <div>
+
+                                <strong id="car-transmission">
+                                    -
+                                </strong>
+
+                                <small>
+                                    Коробка передач
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="vehicle-actions">
+
+                        <button
+                            id="add-to-cart"
+                            class="add-to-cart-button"
+                            type="button">
+
+                            🛒 Додати до кошика
+
+                        </button>
+
+                        <button
+                            class="favourite-large heart-button"
+                            type="button"
+                            aria-label="Додати до обраного">
+
+                            ♡ Додати до обраного
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- FINANCING -->
+
+                    <div class="finance-box">
+
+                        <div>
+
+                            <strong>
+                                Доступне фінансування
+                            </strong>
+
+                            <p>
+                                Перегляньте приклади варіантів фінансування цього автомобіля.
+                            </p>
+
+                        </div>
+
+
+                        <a href="finance.html">
+                            Переглянути варіанти →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= ОПИС ================= -->
+
+            <section class="vehicle-description">
+
+
+                <div class="description-main">
+
+                    <p class="section-label">
+                        ОГЛЯД АВТОМОБІЛЯ
+                    </p>
+
+
+                    <h2>
+                        Про цей автомобіль
+                    </h2>
+
+
+                    <p id="long-description">
+                        Завантаження опису автомобіля...
+                    </p>
+
+
+                    <p>
+                        Цей автомобіль представлений як частина
+                        навчального проєкту CarVault і не є реальним
+                        автомобілем для продажу.
+                    </p>
+
+                </div>
+
+
+
+                <div class="vehicle-checks">
+
+
+                    <div class="check">
+
+                        <span>
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Перевірка якості
+                            </strong>
+
+                            <p>
+                                Перевірка автомобіля завершена
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="check">
+
+                        <span>
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Перевірка історії
+                            </strong>
+
+                            <p>
+                                Приклад перевірки історії автомобіля
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="check">
+
+                        <span>
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Гарантія
+                            </strong>
+
+                            <p>
+                                Приклад гарантії включено
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= ХАРАКТЕРИСТИКИ ================= -->
+
+            <section class="specifications">
+
+
+                <div class="section-title">
+
+                    <p class="section-label">
+                        ІНФОРМАЦІЯ ПРО АВТОМОБІЛЬ
+                    </p>
+
+                    <h2>
+                        Характеристики
+                    </h2>
+
+                </div>
+
+
+
+                <div class="spec-grid">
+
+
+                    <div class="spec-row">
+
+                        <span>
+                            Виробник
+                        </span>
+
+                        <strong id="spec-make">
+                            -
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="spec-row">
+
+                        <span>
+                            Модель
+                        </span>
+
+                        <strong id="spec-model">
+                            -
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="spec-row">
+
+                        <span>
+                            Рік
+                        </span>
+
+                        <strong id="spec-year">
+                            -
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="spec-row">
+
+                        <span>
+                            Пробіг
+                        </span>
+
+                        <strong id="spec-mileage">
+                            -
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="spec-row">
+
+                        <span>
+                            Паливо
+                        </span>
+
+                        <strong id="spec-fuel">
+                            -
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="spec-row">
+
+                        <span>
+                            Коробка передач
+                        </span>
+
+                        <strong id="spec-transmission">
+                            -
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="spec-row">
+
+                        <span>
+                            Двигун
+                        </span>
+
+                        <strong id="spec-engine">
+                            -
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="spec-row">
+
+                        <span>
+                            Двері
+                        </span>
+
+                        <strong id="spec-doors">
+                            -
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="spec-row">
+
+                        <span>
+                            Тип кузова
+                        </span>
+
+                        <strong id="spec-body">
+                            -
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="spec-row">
+
+                        <span>
+                            Колір
+                        </span>
+
+                        <strong id="spec-colour">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= ЗАКЛИК ДО ДІЇ ================= -->
+
+            <section class="details-cta">
+
+                <div>
+
+                    <p class="section-label">
+                        ЗАЦІКАВИЛИСЯ?
+                    </p>
+
+
+                    <h2>
+                        Готові обрати цей автомобіль?
+                    </h2>
+
+
+                    <p>
+                        Перейдіть до демонстраційного оформлення
+                        замовлення та перегляньте, як працює процес
+                        купівлі CarVault.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="checkout.html"
+                    class="btn btn-primary">
+
+                    Перейти до оформлення →
+
+                </a>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ================= ПІДВАЛ ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo"
+                    >
+                        CAR<span>VAULT</span>
+                    </a>
+
+                    <p>
+                        Сучасний вибір автомобілів
+                        для тих, хто цінує якість,
+                        стиль та продуктивність.
+                    </p>
+
+                </div>
+
+
+                <!-- NAVIGATION -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Навігація
+                    </h4>
+
+                    <a href="index.html">
+                        Головна
+                    </a>
+
+                    <a href="cars.html">
+                        Автомобілі
+                    </a>
+
+                    <a href="finance.html">
+                        Фінансування
+                    </a>
+
+                </div>
+
+
+                <!-- CARVAULT -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        CarVault
+                    </h4>
+
+                    <a href="about.html">
+                        Про нас
+                    </a>
+
+                    <a href="contact.html">
+                        Контакти
+                    </a>
+
+                    <a href="favourites.html">
+                        Обране
+                    </a>
+
+                </div>
+
+
+                <!-- HELP -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Допомога
+                    </h4>
+
+                    <a href="cart.html">
+                        Кошик
+                    </a>
+
+                    <a
+                        href="login.html"
+                        class="footer-login-link"
+                    >
+                        Увійти
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 CarVault
+                </span>
+
+                <span>
+                    Демонстраційний вебсайт
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/main.js"></script>
+    <script src="js/cars.js"></script>
+</body>
+
+</html>

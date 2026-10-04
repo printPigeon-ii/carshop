@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CarVault | Вхід</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/car-detail.css">
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= НАВІГАЦІЯ ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-content">
+
+            <a href="index.html" class="logo">
+                CAR<span>VAULT</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Головна
+                </a>
+
+                <a href="cars.html">
+                    Автомобілі
+                </a>
+
+                <a href="finance.html">
+                    Фінансування
+                </a>
+
+                <a href="about.html">
+                    Про нас
+                </a>
+
+                <a href="contact.html">
+                    Контакти
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="favourites.html"
+                    class="favourites"
+                    aria-label="Обране">
+
+                    ♡
+
+                </a>
+
+                <a
+                    href="cart.html"
+                    class="cart-link"
+                    aria-label="Кошик">
+
+                    🛒 <span class="cart-count">0</span>
+
+                </a>
+
+                <a
+                    href="login.html"
+                    class="login-btn">
+
+                    Увійти
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= ВХІД ================= -->
+
+    <main class="login-page">
+
+        <div class="login-container">
+
+
+            <!-- ЛІВА ЧАСТИНА -->
+
+            <div class="login-intro">
+
+                <p class="section-label">
+                    ЛАСКАВО ПРОСИМО ДО CARVAULT
+                </p>
+
+                <h1>
+                    Ваші автомобілі.<br>
+                    <span>Ваш акаунт.</span>
+                </h1>
+
+                <p>
+                    Увійдіть до свого акаунта, щоб керувати
+                    обраними автомобілями, переглядати замовлення
+                    та продовжувати користуватися CarVault.
+                </p>
+
+
+                <div class="login-benefits">
+
+
+                    <!-- ОБРАНЕ -->
+
+                    <div class="benefit">
+
+                        <span>
+                            ♡
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Зберігайте обране
+                            </strong>
+
+                            <p>
+                                Зберігайте автомобілі, які вам сподобалися.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ЗАМОВЛЕННЯ -->
+
+                    <div class="benefit">
+
+                        <span>
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Відстежуйте замовлення
+                            </strong>
+
+                            <p>
+                                Переглядайте свої попередні замовлення.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- АКАУНТ -->
+
+                    <div class="benefit">
+
+                        <span>
+                            ★
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Особистий акаунт
+                            </strong>
+
+                            <p>
+                                Керуйте своїми даними в одному місці.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= КАРТКА ВХОДУ ================= -->
+
+            <div class="login-card">
+
+
+                <div class="login-header">
+
+                    <p class="section-label">
+                        АКАУНТ
+                    </p>
+
+                    <h2>
+                        З поверненням!
+                    </h2>
+
+                    <p>
+                        Увійдіть до свого акаунта CarVault.
+                    </p>
+
+                </div>
+
+
+
+                <form id="login-form">
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Електронна пошта
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- ПАРОЛЬ -->
+
+                    <div class="form-group">
+
+                        <div class="password-label">
+
+                            <label for="password">
+                                Пароль
+                            </label>
+
+                            <a href="#">
+                                Забули пароль?
+                            </a>
+
+                        </div>
+
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Введіть пароль"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- ЗАПАМ'ЯТАТИ -->
+
+                    <label class="remember">
+
+                        <input
+                            type="checkbox"
+                            id="remember"
+                        >
+
+                        <span>
+                            Запам'ятати мене
+                        </span>
+
+                    </label>
+
+
+
+                    <!-- КНОПКА -->
+
+                    <button
+                        type="submit"
+                        class="login-submit">
+
+                        Увійти →
+
+                    </button>
+
+
+
+                    <!-- ПОВІДОМЛЕННЯ -->
+
+                    <p
+                        id="login-message"
+                        class="login-message">
+                    </p>
+
+
+                </form>
+
+
+
+                <!-- РЕЄСТРАЦІЯ -->
+
+                <div class="register-link">
+
+                    <span>
+                        Немає акаунта?
+                    </span>
+
+                    <a href="register.html">
+                        Створити акаунт
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 CarVault
+                </p>
+
+                <p>
+                    Навчальний проєкт
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
